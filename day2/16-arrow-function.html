@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // function expression
+
+        const calcAge1 = function(birthYear){
+            return 2024 - birthYear;
+        }
+
+        // arrow function 
+        const calcAge2 = birthYear => 2024 - birthYear;
+        const age2 = calcAge2(2001);
+        console.log(age2);
+
+
+        const yearsUntilRetirement = (birthYear , firstName)=>{
+
+            const age = 2024 - birthYear;
+            const retirement = 65 - age;
+
+            return `${firstName} has ${retirement} years to retire`;
+        }
+
+        console.log(yearsUntilRetirement(2001,'taha'));
+        console.log(yearsUntilRetirement(1999,'amin'));
+        console.log(yearsUntilRetirement(1965, 'kamal'));
+    </script>
+</body>
+</html>

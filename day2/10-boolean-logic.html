@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        
+            /**
+             * z = x && y
+             * si x est vrai ==> z = y
+             * si x est faux ==> z = x
+             * */
+            let a = 2;
+            let b = 3;
+            console.log(a > 0 && a > b) // false
+            console.log(a && a - b) // -1 (vrai)
+            console.log(a%2 && a%3) // 0 (faux)
+    
+    
+            // Exemple avec fonctions:
+            
+            console.log("----- exemple && avec functions----")
+            function foo(){
+                console.log("foo");
+                return false;
+            }
+    
+            function bar(){
+                console.log("bar");
+                return true;
+            }
+    
+            let z = foo() && bar();
+            if(z){
+                console.log("OK")
+            }else{
+                console.log("NOT OK")
+            }
+    
+
+
+
+              /**
+         * z = x || y
+         * si x est vrai ==> z = x
+         * si x est faux ==> z = y
+         * */
+        let c = 2;
+        let d = 3;
+        console.log(c > 0 || c > d) // true
+        console.log(c || c - d) // 2 (vrai)
+        console.log(c%2 && c%3) // 2 (vrai)
+
+        // Exemple avec fonctions:
+        
+        console.log("----- exemple && avec functions----")
+        function foo(){
+            console.log("foo");
+            return true;
+        }
+
+        function bar(){
+            console.log("bar");
+            return false;
+        }
+
+        let x = foo() || bar();
+        if(x){
+            console.log("OK")
+        }else{
+            console.log("NOT OK")
+        }
+
+
+
+          /**
+         * z = !x
+         * z = !Boolean(x)
+         * */
+         console.log(!true) // false
+         console.log(!0) // true
+         console.log(!null) // true
+         console.log(![]) // false
+ 
+         /**
+          * Astuce: 
+          *!!x = Boolean(x)
+          * */
+         console.log(!!100) // !!true = !false = true
+         console.log(Boolean(100)) // true
+ 
+        </script>
+
+
+</body>
+</html>

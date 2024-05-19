@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+
+        const hasDriversLicense = true;
+        const hasGoodVersion = true;
+
+
+        console.log(hasDriversLicense && hasGoodVersion);
+        console.log(hasDriversLicense || hasGoodVersion);
+        console.log(!hasDriversLicense);
+
+
+
+        if(hasDriversLicense && hasGoodVersion){
+            console.log('you are able to drive');       
+        }else{
+            console.log('sorry! you are not allowed to drive');
+        }
+
+        const isTired = true;
+        console.log(hasDriversLicense && hasGoodVersion && isTired);
+
+
+
+        
+        if(hasDriversLicense && hasGoodVersion && !isTired){
+            console.log('you are able to drive');       
+        }else{
+            console.log('sorry! you are not allowed to drive');
+        }
+    </script>
+</body>
+</html>
